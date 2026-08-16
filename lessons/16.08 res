@@ -1,0 +1,29 @@
+text = input("Введите текст: ")
+letters = 0
+digits = 0
+vowels = 0
+consonants = 0
+spaces = 0
+text = text.lower() # скосить текст
+for a in text:
+    if a.isalpha(): # буква ли
+        letters+=1
+        if a in "aeiou": # если буква то гласная ли
+            vowels+=1
+        else:
+            consonants+=1
+
+    elif a.isdigit(): # цифра ли
+        digits+=1
+
+    elif a==" ": # пробел
+        spaces+=1
+
+print()
+print("=== Анализ текста ===")
+print("Всего символов:", len(text))
+print("Букв:", letters)
+print("Цифр:", digits)
+print("Гласных:", vowels)
+print("Согласных:", consonantes)
+print("Пробелов:", spaces)
