@@ -2,7 +2,7 @@ text = input("Введите текст: ")
 letters = 0
 digits = 0
 vowels = 0
-consonants = 0
+consonantes = 0
 spaces = 0
 text = text.lower() # скосить текст
 for a in text:
@@ -11,7 +11,7 @@ for a in text:
         if a in "aeiou": # если буква то гласная ли
             vowels+=1
         else:
-            consonants+=1
+            consonantes+=1
 
     elif a.isdigit(): # цифра ли
         digits+=1
