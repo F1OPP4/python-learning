@@ -1,6 +1,6 @@
-# Python learning — Lesson 01
-# Topics: for/range, if/elif/else, break, continue,
-# nested loops, strings, indexing, slicing and string methods.
+# Изучение Python — урок 01
+# Темы: for/range, if/elif/else, break, continue,
+# вложенные циклы, строки, индексы, срезы и методы строк.
 
 # 1. range + if + break/continue
 for i in range(1, 21):
@@ -10,7 +10,7 @@ for i in range(1, 21):
         else:
             print(i)
 
-# 2. break before another condition
+# 2. break перед следующим условием
 for i in range(1, 31):
     if i == 25:
         break
@@ -20,23 +20,23 @@ for i in range(1, 31):
         else:
             print(i)
 
-# 3. Nested loops
+# 3. Вложенные циклы
 for i in range(3):
     for a in range(3):
         print(i, a)
 
-# 4. A simple square made with nested loops
+# 4. Простой квадрат из символов с помощью вложенных циклов
 for i in range(4):
     for a in range(4):
         print('*', end=' ')
     print()
 
-# 5. Strings: iterate through characters
+# 5. Строки: перебираем символы строки по очереди
 word = 'libertea'
 for letter in word:
     print(letter)
 
-# 6. Indexing and slicing
+# 6. Индексы и срезы
 word = 'libertea'
 print(word[0:5])
 print(word[3:7])
@@ -44,8 +44,8 @@ print(word[::2])
 print(word[::-1])
 print(word[::-2])
 
-# 7. Palindrome
-word = input('Enter a word: ')
+# 7. Проверяем, является ли слово палиндромом
+word = input('Введите слово: ')
 word = word.replace(' ', '')
 
 if word.lower() == word.lower()[::-1]:
@@ -53,13 +53,13 @@ if word.lower() == word.lower()[::-1]:
 else:
     print('Обычное слово')
 
-# 8. String methods
-word = input('Enter a word: ')
-print('Length:', len(word))
-print('Uppercase:', word.upper())
+# 8. Методы строк
+word = input('Введите слово: ')
+print('Длина:', len(word))
+print('Заглавными буквами:', word.upper())
 
-# 9. Count a character
-word = input('Enter a string: ').lower()
+# 9. Считаем количество определённого символа
+word = input('Введите строку: ').lower()
 count = 0
 
 for letter in word:
@@ -68,8 +68,8 @@ for letter in word:
 
 print('a =', count)
 
-# 10. Count vowels and consonants
-word = input('Enter a string: ').lower()
+# 10. Считаем гласные и согласные
+word = input('Введите строку: ').lower()
 consonants = 0
 vowels = 0
 
@@ -80,11 +80,11 @@ for letter in word:
         else:
             consonants += 1
 
-print('Vowels:', vowels)
-print('Consonants:', consonants)
+print('Гласных:', vowels)
+print('Согласных:', consonants)
 
-# 11. Count letters, digits, vowels and consonants
-word = input('Enter a string: ').lower()
+# 11. Считаем буквы, цифры, гласные и согласные
+word = input('Введите строку: ').lower()
 letters = 0
 digits = 0
 vowels = 0
@@ -102,7 +102,7 @@ for letter in word:
     elif letter.isdigit():
         digits += 1
 
-print('Letters:', letters)
-print('Digits:', digits)
-print('Vowels:', vowels)
-print('Consonants:', consonants)
+print('Букв:', letters)
+print('Цифр:', digits)
+print('Гласных:', vowels)
+print('Согласных:', consonants)
